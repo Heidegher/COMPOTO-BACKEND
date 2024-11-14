@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import posts from "../../../data/posts.json";
 import BlogItem from "../blog-item/BlogItem";
 
 const BlogList = props => {
   return (
     <Row>
-      {posts.map((post, i) => (
+      {[].map((post, i) => (
         <Col
           key={`item-${i}`}
           md={4}
