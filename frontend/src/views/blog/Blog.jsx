@@ -12,7 +12,7 @@ const Blog = props => {
   useEffect(() => {
     const { id } = params;
     const blog = [].find(post => post._id.toString() === id);
-
+    console.log("T")
     if (blog) {
       setBlog(blog);
       setLoading(false);
